@@ -1,12 +1,12 @@
 
 
 export const dynamic = "force-dynamic";
-import Announcements from "@/components/announcements";
-import AttendanceChartContainer from "@/components/attendanceChartContainer";
-import CountChartContainer from "@/components/countChartContainer";
-import EventCalendarContainer from "@/components/eventCalendarContainer";
-import FinanceChart from "@/components/financeChart";
-import UserCard from "@/components/userCard";
+import Announcements from "@/components/Announcements";
+import AttendanceChartContainer from "@/components/AttendanceChartContainer";
+import CountChartContainer from "@/components/CountChartContainer";
+import EventCalendarContainer from "@/components/EventCalendarContainer";
+import FinanceChart from "@/components/FinanceChart";
+import UserCard from "@/components/UserCard";
 
 const AdminPage = ({
   searchParams,
