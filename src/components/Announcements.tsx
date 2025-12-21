@@ -1,4 +1,4 @@
-import prisma from "@/lib/prisma";
+mport prisma from "@/lib/prisma";
 import { auth } from "@clerk/nextjs/server";
 
 const Announcements = async () => {
@@ -70,3 +70,4 @@ const Announcements = async () => {
 };
 
 export default Announcements;
+
