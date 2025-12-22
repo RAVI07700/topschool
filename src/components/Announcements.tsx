@@ -1,9 +1,13 @@
-export const dynamic = "force-dynamic";
+import{headers}from"next/headers";
 import prisma from "@/lib/prisma";
 import { auth } from "@clerk/nextjs/server";
 
 const Announcements = async () => {
-  const { userId, sessionClaims } = auth();
+  const hasRequest=headers().has("x-forwarded-for");
+  if(!hasRequest){
+    return null;//prevents build-time crash
+  }
+  const{userId,sessionClaims}=auth();
   const role = (sessionClaims?.metadata as { role?: string })?.role;
 
   const roleConditions = {
