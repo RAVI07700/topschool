@@ -36,7 +36,7 @@
 // export default StudentPage;
 
 
-
+export const dynamic = "force-dynamic";
 import Announcements from "@/components/Announcements";
 import BigCalendarContainer from "@/components/BigCalendarContainer";
 import EventCalendar from "@/components/EventCalendar";
